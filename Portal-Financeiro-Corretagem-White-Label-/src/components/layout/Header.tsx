@@ -1,4 +1,4 @@
-import { Bell, Search, User, Menu } from 'lucide-react';
+import { Bell, Search, User, Menu, Github } from 'lucide-react';
 import { useThemeStore } from '../../store/useThemeStore';
 
 interface HeaderProps {
@@ -27,7 +27,17 @@ export const Header = ({ onOpenMobileSidebar }: HeaderProps) => {
           />
         </div>
       </div>
-
+       <div className="flex items-center gap-2 sm:gap-3 md:gap-4 pl-2"></div>
+        <a
+            href="https://github.com/Marcelo7211/PortalFinanceiro"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Acessar repositório do projeto no GitHub"
+            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 transition-colors"
+          >
+            <Github size={20} />
+          </a>
+      </div>
       <div className="flex items-center gap-2 sm:gap-3 md:gap-4 pl-2">
         <button 
           onClick={toggleTheme}
