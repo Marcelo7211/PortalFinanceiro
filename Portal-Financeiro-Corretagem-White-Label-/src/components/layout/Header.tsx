@@ -27,8 +27,8 @@ export const Header = ({ onOpenMobileSidebar }: HeaderProps) => {
           />
         </div>
       </div>
-       <div className="flex items-center gap-2 sm:gap-3 md:gap-4 pl-2"></div>
-        <a
+       <div className="flex items-center gap-2 sm:gap-3 md:gap-4 pl-2">
+          <a
             href="https://github.com/Marcelo7211/PortalFinanceiro"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ export const Header = ({ onOpenMobileSidebar }: HeaderProps) => {
           >
             <Github size={20} />
           </a>
-      </div>
+        </div>
       <div className="flex items-center gap-2 sm:gap-3 md:gap-4 pl-2">
         <button 
           onClick={toggleTheme}
